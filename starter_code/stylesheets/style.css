@@ -8,3 +8,81 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+.top-of-body{
+    display: flex;
+   justify-content: flex-start;
+}
+.first-list {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;/*preguntar por qué este wrap no se aplica*/
+}
+
+.first-list li a {
+    text-decoration: none;
+    color: white; 
+}
+ul{
+   
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+}
+ul li{
+    margin-right: 5px;
+}
+img {
+    max-width: 100%;
+}
+body{
+    background-color: #540B51;
+}
+.top-of-body{
+       
+    
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+@media(max-width:767px) {
+    .second-list{
+        display: none;
+    }
+    .first-list ul{
+        display: none;
+    
+    }
+    .top-of-body {
+        justify-content: flex-start;
+        width: 30%;
+        margin-right: 0;
+    }
+    .top-buttons {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 0;
+     flex-wrap: wrap;
+      
+        
+    }/*consultar*/
+}
+
+
+    @media (min-width: 1024px) and (max-width: 1440px) {
+        .first-list ul{
+            display: none;
+        
+        }
+        .top-of-body {
+            justify-content: flex-start;
+            width: 30%;
+        }
+
+    }
+
+
+
+    
